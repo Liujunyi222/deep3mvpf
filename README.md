@@ -156,28 +156,3 @@ python scripts/train_m6a_ablation.py --mode cnn_only
 ```bash
 python scripts/m6A_interpret.py
 ```
-
-## What was cleaned up
-
-1. Replaced hard-coded absolute paths with repo-relative defaults.
-2. Consolidated reusable utilities into `src/`.
-3. Added default m6A dataset auto-discovery.
-4. Added README, `requirements.txt`, `data/README.md`, and `.gitignore`.
-5. Kept output directories clean for GitHub upload.
-
-## Notes for GitHub upload
-
-- Before making the repository public, confirm that all datasets are allowed to be redistributed.
-- If any single file is larger than GitHub's 100 MB limit, use **Git LFS** or provide a download link instead of uploading it directly.
-- Model checkpoints and generated results are ignored by default.
-
-## Suggested GitHub workflow
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-```
