@@ -1,0 +1,13 @@
+torch
+torch-geometric
+numpy
+pandas
+scipy
+scikit-learn
+tqdm
+openpyxl
+matplotlib
+seaborn
+captum
+logomaker
+umap-learn
